@@ -1,0 +1,74 @@
+header {
+    @apply w-full absolute;
+    height: 100px;
+    @include d-flex(row, center, flex-start);
+    z-index: 100;
+
+    .containere {
+        width: 100%;
+        @include d-flex(row, center, space-between);
+    }
+}
+
+.logo {
+
+    figure {
+        width: 84px;
+        height: 74px;
+    }
+}
+
+.nav {
+    @include d-flex(row, center, space-between);
+    gap: 100px;
+
+    &-link {
+        @apply text-white;
+        font-size: 16px;
+        font-weight: medium;
+        position: relative;
+    }
+
+    &-link::after {
+        content: "";
+        @apply absolute;
+        left: 0;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--secondary);
+        transition: 0.3s;
+        bottom: -4px;
+        box-shadow: 1px 5px 20px var(--secondary);
+    }
+
+    &-link:hover:after {
+        width: 100%;
+    }
+
+
+    &-link:hover {
+        color: var(--secondary);
+        font-weight: bold;
+    }
+
+    &-link:active {
+        color: var(--secondary);
+
+        &::after {
+            content: "";
+            @apply absolute;
+            left: 0;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background: var(--secondary);
+            bottom: -4px;
+            box-shadow: 1px 5px 20px var(--secondary);
+        }
+    }
+}

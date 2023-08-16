@@ -1,0 +1,16 @@
+:root {
+    --bg-linear: linear-gradient(to bottom right, #242E4E, #151511);
+    --secondary: #327BE8;
+    --grey: #D9D9D9;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}

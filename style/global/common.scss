@@ -1,0 +1,59 @@
+body,
+* {
+    font-family: 'roboto';
+
+}
+
+.containere {
+    padding: 0 50px;
+}
+
+figure {
+    img {
+        object-fit: cover;
+        @apply w-full h-full;
+    }
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+h2 {
+    @apply pb-2 inline-flex;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+
+    &::after {
+        content: "";
+        @apply absolute;
+        left: 0;
+        width: 70%;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--secondary);
+        bottom: 0;
+    }
+}
+
+p {
+    font-size: 15px;
+}
+
+.btn {
+    background: var(--grey);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    border-radius: 50px;
+    color: var(--secondary);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 20px var(--secondary);
+}

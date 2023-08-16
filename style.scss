@@ -1,5 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {}
+@import './style/global/variable.scss';
+@import './style/global/mixin.scss';
+@import './style/global/common.scss';
+@import './style/header.scss';
+@import './style/hero.scss';
+@import './style/follow.scss';
+@import './style/resume.scss';

@@ -5,8 +5,8 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear_4_61" x1="21" y1="15.6667" x2="44.5537" y2="23.4086" gradientUnits="userSpaceOnUse">
-<stop stop-color="#EAC4C4"/>
-<stop offset="1" stop-color="#2675ED"/>
+<stop stop-color="#242E4E"/>
+<stop offset="1" stop-color="#151511"/>
 </linearGradient>
 <clipPath id="clip0_4_61">
 <rect width="32" height="32" fill="white" transform="translate(13 13)"/>

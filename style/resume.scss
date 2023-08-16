@@ -1,0 +1,42 @@
+.resume {
+    @apply py-8;
+    height: 650px;
+
+}
+
+.container__resume h3 {
+    font-style: italic;
+    color: var(--bg-linear);
+    font-weight: bold;
+    font-size: 20px
+}
+
+.about {
+    @include d-flex(column, flex-start, flex-start);
+    gap: 28px;
+}
+
+.p-medium {
+    max-width: 521px;
+}
+
+.col-2 {
+    width: 100%;
+    @include grid(2);
+    padding: 0 143px;
+    gap: 33%;
+}
+
+.info {
+    @include d-flex(row, flex-start, flex-start);
+
+    svg {
+        @apply mt-1;
+    }
+}
+
+.info-global {
+    @include d-flex(column, flex-start,
+        flex-start);
+    gap: 20px;
+}

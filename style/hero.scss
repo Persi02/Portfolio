@@ -1,0 +1,53 @@
+.hero {
+    @apply w-full h-screen;
+    background: var(--bg-linear);
+    background-repeat: no-repeat;
+    position: relative;
+    @include d-flex(row, center, flex-start);
+
+    .containere {
+        width: 100%;
+    }
+
+
+    .photo {
+        max-width: 500.65px;
+        max-height: 540.83px;
+        min-width: 380px;
+        min-height: 320px;
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            opacity: 80%;
+        }
+    }
+}
+
+.card__title {
+    width: 100%;
+    @include grid(12);
+
+
+}
+
+.col-7 {
+    grid-column: 2/span 7;
+    @include d-flex(column, flex-start, flex-start);
+    color: white;
+    position: relative;
+    gap: 10px;
+
+    .card--text {
+        @include d-flex(column, flex-start, flex-start);
+        gap: 25px;
+
+        .h3 {
+            font-size: 36px;
+        }
+    }
+}
