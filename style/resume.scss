@@ -1,7 +1,8 @@
 .resume {
     @apply py-8;
     height: 650px;
-
+    background-color: var(--grey);
+    position: relative;
 }
 
 .container__resume h3 {
@@ -39,4 +40,34 @@
     @include d-flex(column, flex-start,
         flex-start);
     gap: 20px;
+}
+
+.button-carrosel {
+    position: absolute;
+    bottom: 30px;
+    width: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    @include d-flex(row, center, space-between);
+    gap: 20px;
+
+    button {
+        width: 100px;
+        height: 10px;
+        font-size: 50px;
+        background: white;
+        border-radius: 20px;
+
+        &:hover {
+            background: var(--secondary);
+        }
+    }
+}
+
+.button-carrosel-2 {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    margin-bottom: 325px;
+    transform: translateY(50%);
 }

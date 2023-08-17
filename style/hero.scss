@@ -4,6 +4,8 @@
     background-repeat: no-repeat;
     position: relative;
     @include d-flex(row, center, flex-start);
+    transform-origin: left top;
+    animation: tran-scal 2s linear;
 
     .containere {
         width: 100%;
@@ -28,6 +30,142 @@
     }
 }
 
+.span-3 {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 60px;
+        animation: work 10s infinite 2.9s;
+        width: 330px;
+        color: var(--secondary);
+    }
+
+    @keyframes work {
+        0% {
+            content: "D";
+        }
+
+        3% {
+            content: "De";
+        }
+
+        6% {
+            content: "Dev";
+        }
+
+        9% {
+            content: "Deve";
+        }
+
+        12% {
+            content: "Devel";
+        }
+
+        15% {
+            content: "Develo";
+        }
+
+        18% {
+            content: "Develop";
+        }
+
+        21% {
+            content: "Develope";
+        }
+
+        24% {
+            content: "Developer";
+        }
+
+        27% {
+            content: "Developer front-end";
+        }
+
+        39% {
+            content: "";
+        }
+
+
+
+        42% {
+            content: "W";
+        }
+
+        45% {
+            content: "We";
+        }
+
+        48% {
+            content: "Web";
+        }
+
+        51% {
+            content: "Web designer";
+        }
+
+
+        60% {
+            content: "";
+        }
+
+        63% {
+            content: "I";
+        }
+
+        66% {
+            content: "In";
+        }
+
+        69% {
+            content: "Int";
+        }
+
+        72% {
+            content: "Inte";
+        }
+
+        75% {
+            content: "Integ";
+        }
+
+        78% {
+            content: "Integr";
+        }
+
+        81% {
+            content: "Integra";
+        }
+
+        84% {
+            content: "Integrat";
+        }
+
+        87% {
+            content: "Integrate";
+        }
+
+        91% {
+            content: "Integrateu";
+        }
+
+        94% {
+            content: "Integrateur";
+        }
+
+        95% {
+            content: "Integrateur";
+        }
+
+        100% {
+            content: "";
+        }
+
+    }
+
+}
+
 .card__title {
     width: 100%;
     @include grid(12);
@@ -42,6 +180,7 @@
     position: relative;
     gap: 10px;
 
+
     .card--text {
         @include d-flex(column, flex-start, flex-start);
         gap: 25px;
@@ -50,4 +189,18 @@
             font-size: 36px;
         }
     }
+}
+
+.test {
+    position: absolute;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 20px;
+    }
+}
+
+h4 {
+    color: red;
 }

@@ -1,7 +1,10 @@
 body,
 * {
     font-family: 'roboto';
+}
 
+body {
+    background-color: black;
 }
 
 .containere {
@@ -18,6 +21,7 @@ figure {
 h1 {
     font-size: 90px;
     font-weight: bold;
+    animation: vue 1s linear 2s;
 }
 
 h2 {
@@ -56,4 +60,28 @@ p {
 
 .btn:hover {
     box-shadow: 0px 0px 20px var(--secondary);
+}
+
+@keyframes vue {
+    0% {
+        margin-bottom: -100px;
+        opacity: 0%;
+    }
+
+    100% {
+        margin-bottom: unset;
+        position: unset;
+        opacity: unset;
+    }
+
+}
+
+@keyframes tran-scal {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
