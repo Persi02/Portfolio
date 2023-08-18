@@ -3,8 +3,6 @@ header {
     height: 100px;
     @include d-flex(row, center, flex-start);
     z-index: 100;
-    transform-origin: left top;
-    animation: tran-scal 2s linear;
 
 
     .containere {

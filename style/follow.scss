@@ -5,14 +5,34 @@
     bottom: 30px;
     @include d-flex(row, center, flex-start);
     gap: 14px;
-    animation: opac-left 4s linear;
+
+    a:nth-child(1) {
+        animation: opac-left 3s linear;
+    }
+
+    a:nth-child(2) {
+        animation: opac-left 3.5s linear;
+    }
+
+    a:nth-child(3) {
+        animation: opac-left 4s linear;
+    }
+
+    a:nth-child(4) {
+        animation: opac-left 4.5s linear;
+    }
+
+    a svg {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 .follow a:hover {
     box-shadow: 0px 0px 20px var(--secondary);
 
     svg path {
-        fill: var(--secondary)
+        fill: var(--secondary);
     }
 }
 
@@ -27,7 +47,7 @@
     z-index: 100;
 
     svg {
-        animation: opac 6s linear;
+        animation: opac 5s linear;
         transition: all 1s linear;
         cursor: pointer;
 
@@ -78,7 +98,6 @@
 
 @keyframes opac-left {
     0% {
-        margin-left: -100%;
         opacity: 0%;
     }
 
@@ -88,7 +107,6 @@
     }
 
     100% {
-        margin-left: unset;
         opacity: unset;
     }
 }

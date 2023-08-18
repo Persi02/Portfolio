@@ -1,8 +1,50 @@
 .resume {
     @apply py-8;
-    height: 650px;
     background-color: var(--grey);
     position: relative;
+    overflow-x: hidden;
+
+    .containere:nth-child(3) {}
+}
+
+.card-carousel {
+    width: calc(100%*3);
+    @include grid(3);
+    animation: carousel 20s infinite;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0%);
+    }
+
+
+    28% {
+        transform: translateX(0%);
+    }
+
+
+
+    33% {
+        transform: translateX(-33.33%);
+    }
+
+    61% {
+        transform: translateX(-33.33%);
+    }
+
+    66% {
+        transform: translateX(-66.66%);
+    }
+
+
+    98% {
+        transform: translateX(-66.66%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .container__resume h3 {
@@ -12,7 +54,9 @@
     font-size: 20px
 }
 
-.about {
+.about,
+.skills,
+.experience {
     @include d-flex(column, flex-start, flex-start);
     gap: 28px;
 }
@@ -51,6 +95,102 @@
     @include d-flex(row, center, space-between);
     gap: 20px;
 
+    button:nth-child(1) {
+        animation: carousel-button-1 20s infinite;
+    }
+
+    button:nth-child(2) {
+        animation: carousel-button-2 20s infinite;
+    }
+
+    button:nth-child(3) {
+        animation: carousel-button-3 20s infinite;
+    }
+
+    @keyframes carousel-button-1 {
+        0% {
+            background-color: var(--secondary);
+        }
+
+        28% {
+            background-color: var(--secondary);
+        }
+
+
+
+        33% {
+            background-color: white;
+        }
+
+        98% {
+            background-color: white;
+        }
+
+        100% {
+            background-color: var(--secondary);
+        }
+    }
+
+    @keyframes carousel-button-2 {
+        0% {
+            background-color: white;
+        }
+
+
+        28% {
+            background-color: white;
+        }
+
+
+
+        33% {
+            background-color: var(--secondary);
+        }
+
+
+
+        61% {
+            background-color: var(--secondary);
+        }
+
+
+
+        66% {
+            background-color: white;
+        }
+
+
+        100% {
+            background-color: white;
+        }
+    }
+
+    @keyframes carousel-button-3 {
+        0% {
+            background-color: white;
+        }
+
+
+        61% {
+            background-color: white;
+        }
+
+
+
+        66% {
+            background-color: var(--secondary);
+        }
+
+
+        98% {
+            background-color: var(--secondary);
+        }
+
+        100% {
+            background-color: white;
+        }
+    }
+
     button {
         width: 100px;
         height: 10px;
@@ -70,4 +210,9 @@
     right: 50px;
     margin-bottom: 325px;
     transform: translateY(50%);
+}
+
+.collect {
+    @include d-flex(row, center, flex-start);
+    gap: 20px;
 }

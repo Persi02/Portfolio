@@ -5,10 +5,12 @@ body,
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 .containere {
     padding: 0 50px;
+    width: 100%;
 }
 
 figure {
@@ -21,7 +23,7 @@ figure {
 h1 {
     font-size: 90px;
     font-weight: bold;
-    animation: vue 1s linear 2s;
+    animation: vue 2s linear;
 }
 
 h2 {

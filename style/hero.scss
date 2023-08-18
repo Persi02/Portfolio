@@ -4,8 +4,6 @@
     background-repeat: no-repeat;
     position: relative;
     @include d-flex(row, center, flex-start);
-    transform-origin: left top;
-    animation: tran-scal 2s linear;
 
     .containere {
         width: 100%;
@@ -20,12 +18,25 @@
         position: absolute;
         right: 50px;
         bottom: 0;
+        animation: opac-right 2s linear;
 
         img {
             object-fit: cover;
             width: 100%;
             height: 100%;
             opacity: 80%;
+        }
+    }
+
+    @keyframes opac-right {
+        0% {
+            position: absolute;
+            right: -200px;
+            bottom: 0;
+        }
+
+        100% {
+            right: 50px;
         }
     }
 }
@@ -37,7 +48,7 @@
         content: "";
         position: absolute;
         left: 60px;
-        animation: work 10s infinite 2.9s;
+        animation: work 10s infinite 2.5s;
         width: 330px;
         color: var(--secondary);
     }
